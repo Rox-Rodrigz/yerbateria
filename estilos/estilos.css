@@ -170,6 +170,22 @@ p{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+.item img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.item{
+    width: 100%;
+    transition: 300ms;
+    position: relative;
+}
+
+.item:hover{
+    transform: scale(1.2);
+}
+
 
 div p{
     font-size: medium;
