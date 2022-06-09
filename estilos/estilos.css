@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200&family=Mukta:wght@700&family=Poppins:wght@200&family=Raleway:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200&family=Mukta:wght@700&family=Poppins:wght@200&family=Raleway:wght@600&display=swap');
 
 /*--------- Aspectos generales ----------*/
 
@@ -63,22 +63,22 @@ body {
     justify-content: space-between;
     align-items: center;
     height: 80px;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 600;
 }
 
 img{
     height: 60px;
     background-color: beige;
 }
+
+.navbar{
+    font-family: 'Raleway', sans-serif;
+
+}
+
 nav ul{
     display:flex;
     gap: 50px;
     flex-wrap: nowrap;
-}
-
-nav ul li{
-    list-style-type:none;
 }
 
 a{
@@ -86,23 +86,6 @@ a{
     cursor: pointer;
     font-size: larger;
     color: inherit;
-}
-
-a:hover{
-    background-color: rgb(230, 156, 104);
-}
-
-.submenu{
-    display:none;
-    position: absolute;
-    background-color: rgb(228, 125, 52);
-    width: 200px;
-    text-align: center;
-}
-
-ul li:hover ul{
-    margin: 10px;
-    display:block;
 }
 
 /*---------- Main ----------*/ 
@@ -260,12 +243,12 @@ i{
 }
 
 .formulario{
-    background-color: rgb(167, 161, 161);
+    background-color:antiquewhite;
 }
 
 .contacto{
-    background-color:rgb(1, 48, 22);
-    color: rgb(73, 72, 72);
+    background-color:rgb(167, 57, 57);
+    color: white;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     width: 400px;
@@ -280,6 +263,12 @@ i{
     align-items: center;
     width: 90%;
     margin-bottom: px;;
+}
+
+.boton{
+    width: 50%;
+    display: flex;
+    gap: 20px;
 }
 
 /* Tablet */
@@ -322,25 +311,12 @@ i{
 
 @media (max-width: 480px){
 
-    .header img{
-        display: none;
-    }
-    header{
-        height: 200px;
+    .header{
+        height:40vh;
         position: relative;
     }
-    nav ul{
-            flex-direction: column;
-            align-items: center;
-            position: absolute;
-            left: 0;
-            width: 100%;
-            background-color: chocolate;
-            color:blanchedalmond
-    }
-
-    .header .submenu{
-            display: none;
+    .header img{
+        display: none;
     }
 
     .informacion{
@@ -384,4 +360,3 @@ i{
         padding: 20px 0;
     }
 }
-
