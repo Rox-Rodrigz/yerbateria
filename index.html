@@ -13,10 +13,9 @@
 <body>
     <header class="cabeza">
         <section class="container header">
-            <div class="logo"><img src="./img/logo.png"></div>
             <nav class="navbar navbar-expand-sm navbar-light bg-chocolate">
                 <div class="container-fluid">
-                  <a class="navbar-brand" href="index.html">Inicio</a>
+                  <a class="navbar-brand" href="index.html"><img src="./img/logo.png"></a>
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                   </button>
@@ -25,7 +24,7 @@
                       <a class="nav-link active" aria-current="page" href="./secciones/yerbamate.html">Yerba Mate</a>
                       <a class="nav-link active" href="./secciones/infusiones.html">Te, Yuyitos y Endulzantes</a>
                       <a class="nav-link active" href="./secciones/accesorios.html">Mate, Bombillas y más</a>
-                      <a class="nav-link active" href="contacto.html">contacto</a>
+                      <a class="nav-link active" href="./secciones/contacto.html">contacto</a>
                     </div>
                   </div>
                 </div>
@@ -35,49 +34,63 @@
 
     <main class="cuerpo">
             <section class="informacion">
-                <div class="texto">
-                    <h2 >Pone la pava!!</h2>
-                    <p class="container">Que lindo cuando te dicen esto y te caen con los criollos... Nosotros pan no tenemos, pero tenemos unas <a href="./secciones/yerbamate.html">yerbas ricazas!!</a></p>
-                    <p class="container"> En la Yerbatería incluímos a pequeños y medianos productores de yerba mate.</p>
-                    <p class="container">Vas a encontrar yerbas de producción artesanal compitiendo con marcas que parecen tenerla más fácil.</p>
-                    <p class="container"> Asumimos este compromiso con ellxs y con ustedes porque cuando el abanicode alternativas es mayor hay libertad de elección!.</p>
+                <div>
+                    <h2 class="p-3 fs-1">Pone la pava!!</h2>
+                    <p class="container p-2">Que lindo cuando te dicen esto y te caen con los criollos... Nosotros pan no tenemos, pero tenemos unas <a href="./secciones/yerbamate.html">yerbas ricazas!!</a></p>
+                    <p class="container p-2"> En la Yerbatería incluímos a pequeños y medianos productores de yerba mate.</p>
+                    <p class="container p-2">Vas a encontrar yerbas de producción artesanal compitiendo con marcas que parecen tenerla más fácil.</p>
+                    <p class="container p-2"> Asumimos este compromiso con ellxs y con ustedes, porque cuando el abanico de alternativas es mayor hay libertad de elección!.</p>
                 </div>
             </section>
-            <section class="promociones">
-                <div>
-                    <h2>Promociones</h2>
-                </div>
-                <div class="container productos">
-                    <div class="item">
-                        <img src="./img/organicalaobereña.png" alt="Yerba La Obereña">
-                        <p>Yerba La Obereña 500gr $</p>
+            <section class="promociones container-fluid">
+                <h2 class="container marcas">Trabajamos con mas de 30 marcas</h2>
+                <div id="carouselExampleControls" class="carousel slide mx-3s mb-2" data-bs-ride="carousel">
+                    <div class="carousel-inner text-center">
+                      <div class="carousel-item active">
+                        <img src="./img/slider1.png" class="w-75 h-100" alt="img1">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./img/slider2.png" class="w-75 h-100" alt="img2">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./img/slider3.png" class="w-75 h-100" alt="img3">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./img/slider4.png" class="w-75 h-100" alt="img4">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./img/slider5.png" class="w-75 h-100" alt="img5">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./img/slider6.png" class="w-75 h-100" alt="img6">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./img/slider7.png" class="w-75 h-100" alt="img7">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./img/slider8.png" class="w-75 h-100" alt="img8">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./img/slider9.png" class="w-75 h-100" alt="img9">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./img/slider10.png" class="w-75 h-100" alt="img10">
+                      </div>
                     </div>
-                    <div class="item">
-                        <img src="./img/tererematerojo.png" alt="Yerba Mate Rojo">
-                        <p>Yerba para terere. 500gr $330</p>
-                    </div>
-                    <div class="item">
-                        <img src="./img/tenegrotucangua.jpg" alt="Te La Obereña">
-                        <p>Te negro. Caja 25 saquitow $</p>
-                    </div>
-                    <div class="item">
-                        <img src="./img/endulzantemielmonte.jpg" alt="Miel de Monte">
-                        <p>Frasco de 150gr $480</p>
-                    </div>
-                    <div class="item">
-                        <img src="./img/matepintados.png" alt="Mate">
-                        <p>Mate Pintado Abracadabra $1050</p>
-                    </div>
-                    <div class="item">
-                        <img src="./img/termowellsense.png" alt="Termo Wellsense">
-                        <p>Capacidad 1Lt $2900</p>
-                    </div>
-                </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
             </section>
     </main>
 
     <footer class="pie">
-        <section class="footer container">
+        <section class="footer container mt-3">
             <div class="horario">
             <h4>Horarios</h4>
             <p>Días: Lunes, Martes, Miércoles, Jueves, Viernes y Sábado de 09:30AM a 21:00PM.</p>
