@@ -1,0 +1,33 @@
+footer{
+    background-color: rgb(96, 47, 12);
+    color: blanchedalmond;
+    font-weight: 700;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    .footer{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+        height: 150px;
+        p{
+            font-size: 16px;
+            margin-bottom: 10px;
+            text-align: start;
+        }
+        nav{
+            a{
+                color: whitesmoke
+            i{
+                gap: 10px;
+                font-size: larger;
+                margin-bottom: 10px;
+                }
+                &:hover{
+                    background-color: rgb(230, 156, 104);
+                    }
+                }
+            }
+        }
+    }
+
+

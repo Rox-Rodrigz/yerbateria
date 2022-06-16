@@ -1,0 +1,43 @@
+main{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+        .informacion {
+            background: url(../img/matef.jpg);
+            background-size: cover;
+            height: 100vh;
+            color: black;
+            h2 {
+                font-size: 40px;
+                font-family: 'Mukta', sans-serif;
+                margin: 35px 0;
+                text-align: center
+            }
+            p{ 
+                font-size: large;
+                font-weight: $font;
+                text-align: center;
+                padding: 10px;
+                    a{
+                        color: black;
+                    }
+            }
+        }
+        .promociones{
+            background-color: moccasin;
+                .marcas{
+                    font-family:'Montserrat', sans-serif;
+                    font-size: x-large;
+                    margin: 40px auto;
+                    text-align: center;
+                }
+                .carousel-inner{
+                    height: 500px;
+                    img {
+                        width: 70%;
+                        max-height: 460px;
+                    }
+                   }
+                   
+            }
+    }

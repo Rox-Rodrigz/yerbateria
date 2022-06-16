@@ -1,0 +1,277 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200&family=Montserrat:ital,wght@1,500&family=Mukta:wght@700&family=Poppins:wght@500&family=Raleway:wght@600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, auto);
+  grid-template-areas: "header" "contenido" "producto" "footer";
+}
+body .cabeza {
+  background-color: chocolate;
+  color: white;
+  grid-area: header;
+}
+body .cuerpo {
+  background-color: bisque;
+  grid-area: contenido;
+}
+body .producto {
+  background-color: white;
+  grid-area: producto;
+}
+body .pie {
+  grid-area: footer;
+}
+
+.navbar {
+  font-family: "Raleway", sans-serif;
+}
+.navbar a {
+  text-decoration: none;
+  cursor: pointer;
+  font-size: larger;
+  color: inherit;
+}
+.navbar a img {
+  height: 80px;
+  background-color: beige;
+}
+.navbar a:hover {
+  background-color: rgb(230, 156, 104);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+main .informacion {
+  background: url(../img/matef.jpg);
+  background-size: cover;
+  height: 100vh;
+  color: black;
+}
+main .informacion h2 {
+  font-size: 40px;
+  font-family: "Mukta", sans-serif;
+  margin: 35px 0;
+  text-align: center;
+}
+main .informacion p {
+  font-size: large;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px;
+}
+main .informacion p a {
+  color: black;
+}
+main .promociones {
+  background-color: moccasin;
+}
+main .promociones .marcas {
+  font-family: "Montserrat", sans-serif;
+  font-size: x-large;
+  margin: 40px auto;
+  text-align: center;
+}
+main .promociones .carousel-inner {
+  height: 500px;
+}
+main .promociones .carousel-inner img {
+  width: 70%;
+  max-height: 460px;
+}
+
+footer {
+  background-color: rgb(96, 47, 12);
+  color: blanchedalmond;
+  font-weight: 700;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+footer .footer {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  height: 150px;
+}
+footer .footer p {
+  font-size: 16px;
+  margin-bottom: 10px;
+  text-align: start;
+}
+footer .footer nav a {
+  color: whitesmoke i;
+  color-gap: 10px;
+  color-font-size: larger;
+  color-margin-bottom: 10px;
+}
+footer .footer nav a:hover {
+  background-color: rgb(230, 156, 104);
+}
+
+/*---------- Yerbas Mates / Infusiones / Accesorios ----------*/
+.promociones {
+  background-color: moccasin;
+}
+.promociones h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: x-large;
+  margin: 40px auto;
+  text-align: center;
+}
+.promociones .productos .card {
+  width: 100%;
+  transition: 300ms;
+  position: relative;
+}
+.promociones .productos .card:hover {
+  transform: scale(1.2);
+  background-color: rgb(160, 192, 105);
+}
+.promociones .productos .card:hover p {
+  font-size: medium;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* ---------- Contacto ---------- */
+.titulo {
+  font-size: 40px;
+  font-family: "Mukta", sans-serif;
+  margin: 25px 0;
+  text-align: center;
+}
+
+.parrafo {
+  font-size: 30px;
+  font-family: "Mukta", sans-serif;
+  text-align: center;
+}
+
+.formulario {
+  background-color: antiquewhite;
+}
+
+.contacto {
+  background-color: rgb(167, 57, 57);
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  width: 400px;
+  top: 50%;
+  left: 50%;
+}
+
+.contacto label, .contacto input, .contacto textarea {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  margin-bottom: px;
+}
+
+.boton {
+  width: 50%;
+  display: flex;
+  gap: 20px;
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  .header nav {
+    margin: 0 auto;
+  }
+
+  .header .submenu {
+    display: none;
+  }
+
+  .informacion {
+    background: none;
+    background-color: rgb(244, 171, 144);
+    color: rgb(40, 39, 39);
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    text-align: end;
+  }
+
+  .promociones .productos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "p1 p2" "p3 p4" "p5 p6";
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    gap: 15px;
+  }
+
+  .footer {
+    margin: 0 auto;
+  }
+}
+/* Mobile */
+@media (max-width: 480px) {
+  .header {
+    height: 40vh;
+    position: relative;
+  }
+
+  .informacion {
+    background: none;
+    background-color: rgba(5, 70, 54, 0.911);
+    color: white;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    text-align: center;
+  }
+
+  .promociones .productos {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, auto);
+    grid-template-areas: "p1" "p2" "p3" "p4" "p5" "p6";
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    gap: 15px;
+  }
+
+  footer .horario {
+    display: none;
+  }
+
+  footer nav ul {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin: 0;
+    left: 0;
+    background-color: rgb(96, 47, 12);
+    width: 100%;
+    padding: 20px 0;
+  }
+}/*# sourceMappingURL=style.css.map */

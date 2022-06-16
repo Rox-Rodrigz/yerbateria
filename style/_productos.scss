@@ -1,0 +1,30 @@
+
+/*---------- Yerbas Mates / Infusiones / Accesorios ----------*/
+
+.promociones{
+    background-color: moccasin;
+        h2{
+            font-family:'Montserrat', sans-serif;
+            font-size: x-large;
+            margin: 40px auto;
+            text-align: center;
+        }
+        .productos{
+            .card{
+                width: 100%;
+                transition: 300ms;
+                position: relative;
+                &:hover{
+                transform: scale(1.2);
+                background-color: rgb(160, 192, 105);
+                p{
+                    font-size: medium;
+                    margin-bottom: 10px;
+                    text-align: center;
+                
+                }
+              }
+            }
+        }
+}  
+

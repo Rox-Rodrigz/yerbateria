@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200&family=Montserrat:ital,wght@1,500&family=Mukta:wght@700&family=Poppins:wght@500&family=Raleway:wght@600&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html{
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(4, auto);
+	grid-template-areas: "header"
+						 "contenido"
+						 "producto"
+						 "footer";
+                         
+                        .cabeza{
+                            background-color: chocolate;
+                            color: white;
+                            grid-area: header;
+                        }
+                        
+                        .cuerpo{
+                            background-color: bisque;
+                            grid-area: contenido;
+                        }
+                        
+                        .producto{
+                            background-color: white;
+                            grid-area: producto;
+                        }
+                        
+                        .pie{
+                            grid-area: footer;
+                        }
+                        
+}
+
+
+

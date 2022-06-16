@@ -1,0 +1,138 @@
+@import "variables";
+@import "generales";
+@import "navbar";
+@import "main";
+@import "footer";
+@import "productos";
+
+
+
+/* ---------- Contacto ---------- */
+
+.titulo{
+    font-size: 40px;
+    font-family: 'Mukta', sans-serif;
+    margin: 25px 0;
+    text-align: center;
+}
+.parrafo{
+    font-size: 30px;
+    font-family: 'Mukta', sans-serif;
+    text-align: center;
+}
+
+.formulario{
+    background-color:antiquewhite;
+}
+
+.contacto{
+    background-color:rgb(167, 57, 57);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    width: 400px;
+    top: 50%;
+    left: 50%;
+}
+
+.contacto label, .contacto input, .contacto textarea{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin-bottom: px;;
+}
+
+.boton{
+    width: 50%;
+    display: flex;
+    gap: 20px;
+}
+
+/* Tablet */
+
+@media (max-width: 768px) {
+    .header nav{
+        margin: 0 auto;
+    }
+    .header .submenu{
+        display: none;
+    }
+    .informacion{
+        background: none;
+        background-color: rgb(244, 171, 144);
+        color: rgb(40, 39, 39);
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        text-align: end;
+    }
+    .promociones .productos{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-template-areas: "p1 p2"
+                                 "p3 p4"
+                                 "p5 p6";
+            justify-content: center;
+            align-content: center;
+            align-items:center;
+            margin-bottom: 30px;
+            gap: 15px;
+    }
+    .footer{
+        margin: 0 auto;
+    }
+}
+
+/* Mobile */
+
+@media (max-width: 480px){
+
+    .header{
+        height:40vh;
+        position: relative;
+    }
+
+    .informacion{
+        background: none;
+        background-color: rgba(5, 70, 54, 0.911);
+        color: white;
+        flex-direction: column;
+        justify-content: center;
+        align-items: end;
+        text-align: center;
+    }
+    .promociones .productos{
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(6, auto);
+            grid-template-areas: "p1"
+                                 "p2"
+                                 "p3"
+                                 "p4"
+                                 "p5"
+                                 "p6"; 
+            justify-content: center;
+            align-content: center;
+            align-items:center;
+            margin-bottom: 30px;
+            gap: 15px;
+    }
+    footer .horario{
+        display: none
+    }
+    
+    footer nav ul{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        margin: 0;
+        left: 0;
+        background-color: rgb(96, 47, 12);
+        width: 100%;
+        padding: 20px 0;
+    }
+}

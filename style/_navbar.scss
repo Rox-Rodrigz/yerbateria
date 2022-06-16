@@ -1,0 +1,16 @@
+.navbar{
+    font-family: 'Raleway', sans-serif;
+    a{
+        text-decoration: none;
+        cursor: pointer;
+        font-size: larger;
+        color: inherit;
+            img {
+                height: 80px;
+                background-color: beige;
+            }
+            &:hover{
+                background-color: rgb(230, 156, 104);
+                }
+    }
+}
