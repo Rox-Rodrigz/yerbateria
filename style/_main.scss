@@ -22,6 +22,12 @@ main{
                         color: black;
                     }
             }
+
+            @include breakpoint(md) {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
         }
         .promociones{
             background-color: moccasin;
@@ -35,7 +41,8 @@ main{
                     height: 500px;
                     img {
                         width: 70%;
-                        max-height: 460px;
+                        height: 100%;
+                        max-height: 480px;
                     }
                    }
                    
