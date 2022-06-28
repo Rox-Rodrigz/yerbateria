@@ -20,21 +20,20 @@ footer{
             a{
                 color: $second-color;
                 text-decoration: none;
-
-            i{
-                gap: 20px;
-                font-size: larger;
-                margin-bottom: 10px;
-                }
-                .fa-brands{
-                    color: bisque;
-                }
                 &:hover{
-                    background-color: rgb(230, 156, 104);
+                    transition: 300ms;
+                    transform: scale(1.2);
+                    background-color: chocolate;
                     }
+            }
+            .icono{
+                color: blanchedalmond;
+                font-size: 50px;
+                gap:25px;
+            }
                 }
             }
         }
-}
+
 
 

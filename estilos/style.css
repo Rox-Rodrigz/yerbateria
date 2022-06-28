@@ -125,16 +125,15 @@ footer .footer nav a {
   color: whitesmoke;
   text-decoration: none;
 }
-footer .footer nav a i {
-  gap: 20px;
-  font-size: larger;
-  margin-bottom: 10px;
-}
-footer .footer nav a .fa-brands {
-  color: bisque;
-}
 footer .footer nav a:hover {
-  background-color: rgb(230, 156, 104);
+  transition: 300ms;
+  transform: scale(1.2);
+  background-color: chocolate;
+}
+footer .footer nav .icono {
+  color: blanchedalmond;
+  font-size: 50px;
+  gap: 25px;
 }
 
 /*---------- Yerbas Mates / Infusiones / Accesorios ----------*/
@@ -152,6 +151,10 @@ footer .footer nav a:hover {
 }
 .promociones .productos .card img {
   margin-top: 10px;
+}
+.promociones .productos .card img:hover {
+  transform: scale(1.3);
+  transition: 300ms;
 }
 .promociones .productos .card p {
   font-size: medium;
