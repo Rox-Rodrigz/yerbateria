@@ -1,5 +1,5 @@
 /* map */
-@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200&family=Montserrat:ital,wght@1,500&family=Mukta:wght@700&family=Poppins:wght@500&family=Raleway:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200&family=Montserrat:ital,wght@1,500&family=Mukta:wght@700&family=Poppins:wght@200&family=Raleway:wght@300&family=Source+Sans+Pro&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -49,7 +49,7 @@ body .pie {
   color: inherit;
 }
 .navbar a img {
-  height: 80px;
+  height: 70px;
   background-color: beige;
 }
 .navbar a:hover {
@@ -92,12 +92,14 @@ main .promociones .marcas {
   text-align: center;
 }
 main .promociones .carousel-inner {
-  height: 500px;
+  height: 480px;
 }
 main .promociones .carousel-inner img {
-  width: 70%;
+  width: 100%;
   height: 100%;
-  max-height: 480px;
+  max-height: 450px;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 footer {
@@ -128,6 +130,9 @@ footer .footer nav a i {
   font-size: larger;
   margin-bottom: 10px;
 }
+footer .footer nav a .fa-brands {
+  color: bisque;
+}
 footer .footer nav a:hover {
   background-color: rgb(230, 156, 104);
 }
@@ -144,45 +149,42 @@ footer .footer nav a:hover {
 }
 .promociones .productos .card {
   width: 100%;
-  transition: 300ms;
-  position: relative;
 }
-.promociones .productos .card:hover {
-  transform: scale(1.2);
-  background-color: rgb(160, 192, 105);
+.promociones .productos .card img {
+  margin-top: 10px;
 }
-.promociones .productos .card:hover p {
+.promociones .productos .card p {
   font-size: medium;
   margin-bottom: 10px;
   text-align: center;
+  font-weight: bold;
 }
-
-.formulario contactolabel, .formulario contactoinput, .formulario contactotextarea {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 90%;
-  margin-bottom: px;
+.promociones .productos .card:hover {
+  background-color: rgb(218, 214, 214);
 }
 
 /* ---------- Contacto ---------- */
-.cuerpo titulo {
+.cuerpo h2 {
   font-size: 40px;
   font-family: "Mukta", sans-serif;
-  margin: 25px 0;
+  margin: 20px 0;
   text-align: center;
 }
-.cuerpo titulo parrafo {
+.cuerpo h2 .parrafo {
   font-size: 30px;
   font-family: "Mukta", sans-serif;
   text-align: center;
+}
+.cuerpo .mapa {
+  margin-bottom: 10px;
+  margin-left: 50px;
+  width: 60%;
 }
 
 .formulario {
   background-color: antiquewhite;
 }
-.formulario contacto {
+.formulario .contacto {
   background-color: rgb(167, 57, 57);
   color: white;
   font-family: Arial, Helvetica, sans-serif;
@@ -191,85 +193,95 @@ footer .footer nav a:hover {
   top: 50%;
   left: 50%;
 }
-.formulario boton {
+.formulario .contacto label, .formulario .contacto input, .formulario .contacto textarea {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  margin-bottom: 5px;
+}
+.formulario .boton {
   width: 50%;
   display: flex;
   gap: 20px;
-}
-.formulario boton:hover {
-  color: chocolate;
+  margin-bottom: 10px;
 }
 
+/* Desktop */
+@media (max-width: 1024px) {
+  .header {
+    height: 100px;
+  }
+
+  .cuerpo .informacion {
+    height: 95vh;
+  }
+  .cuerpo .promociones .carousel {
+    width: 100%;
+    height: 95%;
+  }
+}
 /* Tablet */
 @media (max-width: 768px) {
-  .header nav {
-    margin: 0 auto;
+  .header {
+    height: 100px;
+  }
+  .header img {
+    height: 60px;
+    -o-object-fit: contain;
+       object-fit: contain;
   }
 
-  .header .submenu {
-    display: none;
-  }
-
-  .informacion {
-    background: none;
-    background-color: rgb(244, 171, 144);
+  .cuerpo .informacion {
+    background: url(../img/matef.jpg);
+    height: 75vh;
     color: rgb(40, 39, 39);
     flex-direction: column;
     justify-content: center;
-    align-items: flex-end;
-    text-align: end;
-  }
-
-  .promociones .productos {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: "p1 p2" "p3 p4" "p5 p6";
-    justify-content: center;
-    align-content: center;
     align-items: center;
-    margin-bottom: 30px;
-    gap: 15px;
+    text-align: center;
+  }
+  .cuerpo .promociones .carousel {
+    margin: 0;
+    height: 440px;
   }
 
   .footer {
     margin: 0 auto;
   }
-}
-/* Mobile */
-@media (max-width: 480px) {
-  .header {
-    height: 40vh;
-    position: relative;
-  }
-
-  .informacion {
-    background: none;
-    background-color: rgba(5, 70, 54, 0.911);
-    color: white;
-    flex-direction: column;
-    justify-content: center;
-    align-items: end;
-    text-align: center;
-  }
-
-  .promociones .productos {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(6, auto);
-    grid-template-areas: "p1" "p2" "p3" "p4" "p5" "p6";
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    margin-bottom: 30px;
-    gap: 15px;
-  }
-
-  footer .horario {
+  .footer .horario {
     display: none;
   }
+}
+/* Mobile */
+@media (max-width: 576px) {
+  .header {
+    height: 85px;
+  }
+  .header img {
+    margin-top: 0;
+  }
 
-  footer nav ul {
+  .cuerpo .informacion {
+    background: none;
+    background-color: rgb(194, 116, 88);
+    height: 75vh;
+    color: black;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .cuerpo .promociones .carousel {
+    margin: auto;
+    height: 340px;
+  }
+
+  .footer .horario {
+    display: none;
+  }
+  .footer nav ul {
     flex-direction: column;
     justify-content: center;
     align-items: center;

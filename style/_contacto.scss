@@ -1,34 +1,30 @@
 
 
-%contacto {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 90%;
-    margin-bottom: px;;
-}
-
 /* ---------- Contacto ---------- */
 
 .cuerpo{
-    titulo{
+    h2{
         font-size: 40px;
         font-family: 'Mukta', sans-serif;
-        margin: 25px 0;
+        margin: 20px 0;
         text-align: center;
-        parrafo{
+        .parrafo{
             font-size: 30px;
             font-family: 'Mukta', sans-serif;
             text-align: center;
         }
+    }
+    .mapa{
+        margin-bottom: 10px;
+        margin-left: 50px;
+        width: 60%;
     }
 }
 
 
 .formulario{
     background-color:antiquewhite;
-    contacto{
+        .contacto{
         background-color:rgb(167, 57, 57);
         color: white;
         font-family: Arial, Helvetica, sans-serif;
@@ -36,18 +32,19 @@
         width: 400px;
         top: 50%;
         left: 50%;
-    
-        &label, &input, &textarea{
-            @extend %contacto
-        }
+            label, input, textarea{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 90%;
+                margin-bottom: 5px;
+            }
     }
-    boton{
+    .boton{
         width: 50%;
         display: flex;
         gap: 20px;
-
-        &:hover{
-            color: $color;
-            }
+        margin-bottom: 10px;
     }
 }

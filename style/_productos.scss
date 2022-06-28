@@ -12,19 +12,20 @@
         .productos{
             .card{
                 width: 100%;
-                transition: 300ms;
-                position: relative;
-                &:hover{
-                transform: scale(1.2);
-                background-color: rgb(160, 192, 105);
+                img{
+                    margin-top: 10px;
+                }
                 p{
                     font-size: medium;
                     margin-bottom: 10px;
                     text-align: center;
-                
+                    font-weight:bold ;
+                }
+                &:hover{
+                    background-color: rgb(218, 214, 214);
                 }
               }
             }
         }
-}  
+
 
