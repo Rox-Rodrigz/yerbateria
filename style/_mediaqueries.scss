@@ -3,11 +3,11 @@
 
 @media (max-width: 1024px) {
     .header{
-        height: 100px;
+        height: fit-content;
     }
     .cuerpo{
         .informacion{
-            height: 95vh;
+            height: fit-content;
         }
         .promociones{
             .carousel{
@@ -23,7 +23,6 @@
 
 @media (max-width: 768px) {
     .header{
-        height: 100px;
         img{
             height: 60px;
             object-fit: contain;
@@ -32,17 +31,18 @@
     .cuerpo{
         .informacion{
             background: url(../img/matef.jpg);
-            height: 75vh;
-            color: rgb(40, 39, 39);
+            height: fit-content;
+            font-size: medium;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             text-align: center;
         }
         .promociones{
+            height: max-content;
             .carousel{
-                margin: 0;
-                height: 440px;
+                align-items: center;
+                height: fit-content;
             }
         }
     }
@@ -59,32 +59,35 @@
 
 @media (max-width: 576px){
     .header{
-        height: 85px;
+        height: fit-content;
         img{
             margin-top: 0;
         }
     }
 
     .cuerpo{
+        height: fit-content;
         .informacion{
-            background: none;
-            background-color:rgb(194, 116, 88);
-            height: 75vh;
-            color: $a;
+            background: url(../img/fondo.jpg);
+            height: fit-content;
+            color: rgb(80, 7, 7);
+            font-weight: 400;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             text-align: center;
         }
         .promociones {
+            height: fit-content(350px);
             .carousel{
-                margin: auto;
-                height: 340px
+                justify-content: center;
+                align-self: center;
             }
         }
     }
 
     .footer{
+        height: 70%;
         .horario{
             display: none
         }
@@ -92,12 +95,7 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            position: absolute;
-            margin: 0;
-            left: 0;
-            background-color: rgb(96, 47, 12);
-            width: 100%;
-            padding: 20px 0;
+          
             }
         }
     }

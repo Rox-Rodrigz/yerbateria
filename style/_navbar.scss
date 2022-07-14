@@ -1,10 +1,14 @@
 .navbar{
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Raleway', sans-serif !important;
     a{
+        background-color: chocolate;
         text-decoration: none;
         cursor: pointer;
         font-size: larger;
         color: inherit;
+            ul{
+                display: inline-block;
+            }
             img {
                 height: 70px;
                 background-color: beige;

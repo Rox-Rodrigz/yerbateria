@@ -18,8 +18,8 @@ footer{
         }
         nav{
             a{
-                color: $second-color;
                 text-decoration: none;
+                color: $second-color;
                 &:hover{
                     transition: 300ms;
                     transform: scale(1.2);
