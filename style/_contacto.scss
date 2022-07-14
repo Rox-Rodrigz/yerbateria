@@ -4,18 +4,16 @@
 
 .cuerpo{
     h2{
-        font-size: 40px;
+        font-size: 30px;
         font-family: 'Mukta', sans-serif;
-        margin: 20px 0;
         text-align: center;
         .parrafo{
-            font-size: 30px;
             font-family: 'Mukta', sans-serif;
             text-align: center;
         }
     }
     .mapa{
-        margin-bottom: 10px;
+        height: min-content;
         margin-left: 50px;
         width: 60%;
     }

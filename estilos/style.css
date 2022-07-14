@@ -167,18 +167,18 @@ footer .footer nav .icono {
 
 /* ---------- Contacto ---------- */
 .cuerpo h2 {
-  font-size: 40px;
-  font-family: "Mukta", sans-serif;
-  margin: 20px 0;
-  text-align: center;
-}
-.cuerpo h2 .parrafo {
   font-size: 30px;
   font-family: "Mukta", sans-serif;
   text-align: center;
 }
+.cuerpo h2 .parrafo {
+  font-family: "Mukta", sans-serif;
+  text-align: center;
+}
 .cuerpo .mapa {
-  margin-bottom: 10px;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
   margin-left: 50px;
   width: 60%;
 }
